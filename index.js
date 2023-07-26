@@ -19,12 +19,11 @@ function mayorDeTres() {
     let userInput;
     do {
         userInput = prompt(promptMessage);
-        userInput = parseFloat(userInput); // Convert the user input to a number
+        userInput = parseFloat(userInput); 
         if (isNaN(userInput) || userInput <= 0) {
         console.log("Entrada inválida. Por favor, ingrese un número natural válido.");
         }
-    } while (isNaN(userInput) || userInput <= 0); // Continue until a valid natural number is provided
-    return userInput;
+    } while (isNaN(userInput) || userInput <= 0); 
     }
 
     let a = getUserInput("Ingrese el primer valor: ");

@@ -4,7 +4,7 @@ function getUserInput(promptMessage) {
   let userInput;
   do {
     userInput = prompt(promptMessage);
-    userInput = parseFloat(userInput); 
+    userInput = parseInt(userInput); 
     if (isNaN(userInput) || userInput <= 0) {
       console.log("Entrada inválida. Por favor, ingrese un número natural válido.");
     }
